@@ -16,11 +16,11 @@ img{
 }
 
 h1{
-    font-size: 48px;
+    font-size: 5rem;
     font-weight: 800;
     line-height: 50px;
-    padding: 0;
-    margin: 0;  
+    padding: 10px;
+    color: #1F2937;
 }
 
 h2{
@@ -33,13 +33,28 @@ h2{
 a{
     text-decoration: none;
     padding: 10px;
-    color: #f9faf8;
     margin-right: 10px;
+    color: #1F2937;
+    font-size: medium;
+    font-weight: 700;
 }
 
 ul{
     list-style-type: none;
 }
+
+cite { 
+    font-style: italic;
+  }
+
+.parallax {
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .content{
     justify-content: center;
@@ -49,37 +64,45 @@ ul{
     display:flex;
 }
 
-.header, .hero_section, .footer{
+.footer{
     background-color: #1F2937;
 }
 
 
 .header{
+    width: 100vw;
     justify-content: space-between;
-    padding: 10px 100px;
-    margin: 0;
+    padding: 0px 20px;
+    opacity: .9;
+    font-weight: bold;
+    color:  #1F2937;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.096), 0 1px 1px 0 rgba(0, 0, 0, 0.068);
+    margin-left: -10%;
+    margin-right: -10%;
+    
 }
 
 
 .hero_section{
+    background-image: url("../images/background_1.svg");
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 50px 100px;
+    padding: 0px 100px;
     width: 100%;
     align-items: center;
     line-height: 15px;
-    gap: 30px;
+    gap: 20px;    
 }
 
 .hero_text_container{
-    font-size: 1.2em;
+    font-size: 2em;
     color: #e5e7eb;
     width: 50%;
-    min-width: 400px;
     flex: auto; 
-    /* border: 2px solid ; */
-
+    font-weight: bold;
+    color: #1F2937;
+    line-height: 30px;
 }
 
 
@@ -90,7 +113,7 @@ ul{
 
 
 .hero_button{
-    background-color: #3882f6;
+    background-color: #1F2937;;
     border: 0;
     border-radius: 5px;
     padding:5px 15px;
@@ -99,15 +122,16 @@ ul{
 }
 
 .image_placeholder {
-    flex-grow: 1;
-    width: 350px;
+    flex:auto;
+    flex-shrink: 0;
+    width: 250px;
     height: auto;
-    border: 2px solid rgb(238, 223, 223);
     box-sizing: border-box;
     border-radius: 10px;
-    margin-top: 50px;
-   
-  }
+    margin: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
 
 .hero_image{
     box-sizing: border-box;
@@ -115,6 +139,7 @@ ul{
     height: 100%;
     padding: 4px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -125,13 +150,14 @@ ul{
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    color: #1f2937
+    color: #1f2937;
+    background-image: url("../images/background_2.svg");  
+    font-weight: bold;
 }
 
 .box_container{
     width: 100%;
     height: auto;
-    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -141,46 +167,54 @@ ul{
 
 .image_boxes{
     box-sizing: border-box;
-    width: 230px;
-    height: 200px;
-    margin-top: 20px;
-    border: 2px solid rgb(29, 149, 192);
+    width: 15rem;
+    height: auto;
+    max-height: 300px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
     border-radius: 10px;
-
 }
-
-
 
 .testimonial{
     display: flex;
+    flex-direction: column;
     background-color: #e5e7eb;
     color: #1F2937;
     font-size: 1.5em;
     font-style: light italic ;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 50px;
+    font-weight: bold;
+    background-image: url("../images/background_3.svg");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .fghj{
 max-width: 600px;
+text-align: center;
+
 
 }
 
 .footer{
     padding: 20px;
     justify-content: center;
+    font-weight: bold;
 }
 .call_to_action{
-    height: 200px;
+    height: 400px;
     min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../images/background_4.svg");
+
 }
 .call_container{
-    background-color: #3882f6;
+    background-color: #1F2937;
    line-height: 0;
     display: flex;
     flex-wrap: wrap;
@@ -195,7 +229,7 @@ max-width: 600px;
 }
 
 .call2btn {
-    background-color: #3882f6;
+    background-color: #1F2937;
     color: #e6eaf0;
     border: 1px solid white;
     border-radius: 5px;
